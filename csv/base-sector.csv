@@ -1,0 +1,8 @@
+comment;string
+heightceiling;int
+heightfloor;int
+id;int
+lightlevel;int
+special;int
+textureceiling;string
+texturefloor;string

@@ -1,0 +1,7 @@
+comment;string
+offsetx;float
+offsety;int
+sector;int
+texturebottom;string
+texturemiddle;string
+texturetop;string
