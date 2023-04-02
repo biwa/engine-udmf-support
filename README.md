@@ -328,7 +328,7 @@ Engine specific information:
 |scaley       |float | -  |   ✔️    |   -    |  ✔️  |
 |score        |int   | -  |    -    |   -    |  ✔️  |
 |single       |bool  | ✔️ |   ✔️    |   ✔️   |  ✔️  |
-|skill1       |bool  | ✔️ |    -    |   ✔️   |  ✔️  |
+|skill1       |bool  | ✔️ |   ✔️    |   ✔️   |  ✔️  |
 |skill10      |bool  | -  |    -    |   -    |  ✔️  |
 |skill11      |bool  | -  |    -    |   -    |  ✔️  |
 |skill12      |bool  | -  |    -    |   -    |  ✔️  |

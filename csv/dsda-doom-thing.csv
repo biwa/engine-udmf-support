@@ -21,6 +21,7 @@ renderstyle;string
 scalex;float
 scaley;float
 single;bool
+skill1;bool
 skill2;bool
 skill3;bool
 skill4;bool
