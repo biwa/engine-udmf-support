@@ -8,7 +8,13 @@ lightabsolute_mid;bool
 light_bottom;int
 lightabsolute_bottom;bool
 offsetx;float
-offsety;int
+offsety;float
+offsetx_bottom;float
+offsetx_mid;float
+offsetx_top;float
+offsety_bottom;float
+offsety_mid;float
+offsety_top;float
 sector;int
 skew_top_type;string
 skew_middle_type;string

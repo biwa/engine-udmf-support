@@ -123,13 +123,13 @@ Engine specific information:
 |nogradient_mid       |bool   |   -    |    -    |    -     |   ✔️   |
 |nogradient_top       |bool   |   -    |    -    |    -     |   ✔️   |
 |offsetx              |*mixed*|✔️ (int)|✔️ (int) |✔️ (float)|✔️ (int)|
-|offsetx_bottom       |float  |   -    |   ✔️    |    -     |   ✔️   |
-|offsetx_mid          |float  |   -    |   ✔️    |    -     |   ✔️   |
-|offsetx_top          |float  |   -    |   ✔️    |    -     |   ✔️   |
-|offsety              |int    |   ✔️   |   ✔️    |    ✔️    |   ✔️   |
-|offsety_bottom       |float  |   -    |   ✔️    |    -     |   ✔️   |
-|offsety_mid          |float  |   -    |   ✔️    |    -     |   ✔️   |
-|offsety_top          |float  |   -    |   ✔️    |    -     |   ✔️   |
+|offsetx_bottom       |float  |   -    |   ✔️    |    ✔️    |   ✔️   |
+|offsetx_mid          |float  |   -    |   ✔️    |    ✔️    |   ✔️   |
+|offsetx_top          |float  |   -    |   ✔️    |    ✔️    |   ✔️   |
+|offsety              |*mixed*|✔️ (int)|✔️ (int) |✔️ (float)|✔️ (int)|
+|offsety_bottom       |float  |   -    |   ✔️    |    ✔️    |   ✔️   |
+|offsety_mid          |float  |   -    |   ✔️    |    ✔️    |   ✔️   |
+|offsety_top          |float  |   -    |   ✔️    |    ✔️    |   ✔️   |
 |scalex_bottom        |float  |   -    |   ✔️    |    -     |   ✔️   |
 |scalex_mid           |float  |   -    |   ✔️    |    -     |   ✔️   |
 |scalex_top           |float  |   -    |   ✔️    |    -     |   ✔️   |
