@@ -3,6 +3,7 @@ anycross;bool
 arg0;int
 arg0str;string
 arg1;int
+arg1str;string
 arg2;int
 arg3;int
 arg4;int
@@ -32,6 +33,10 @@ healthgroup;int
 id;int
 impact;bool
 jumpover;bool
+lm_sampledist_line;int
+lm_sampledist_top;int
+lm_sampledist_mid;int
+lm_sampledist_bot;int
 locknumber;int
 mapped;bool
 midtex3d;bool

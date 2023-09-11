@@ -38,6 +38,8 @@ floorplane_d;float
 floorterrain;string
 fogdensity;int
 gravity;float
+health3d;int
+health3dgroup;int
 healthceiling;int
 healthceilinggroup;int
 healthfloor;int
@@ -53,6 +55,8 @@ lightcolor;int
 lightfloor;int
 lightfloorabsolute;bool
 lightlevel;int
+lm_sampledist_floor;int
+lm_sampledist_ceiling;int
 moreids;string
 noattack;bool
 nofallingdamage;bool
@@ -72,6 +76,12 @@ renderstyleceiling;string
 renderstylefloor;string
 rotationceiling;float
 rotationfloor;float
+scroll_ceil_type;string
+scroll_ceil_x;float
+scroll_ceil_y;float
+scroll_floor_type;string
+scroll_floor_x;float
+scroll_floor_y;float
 silent;bool
 soundsequence;string
 special;int
