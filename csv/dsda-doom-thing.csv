@@ -2,10 +2,14 @@ alpha;float
 ambush;bool
 angle;int
 arg0;int
+arg0str;string
 arg1;int
 arg2;int
 arg3;int
 arg4;int
+class1;bool
+class2;bool
+class3;bool
 comment;string
 coop;bool
 countsecret;bool
@@ -17,9 +21,6 @@ health;float
 height;float
 id;int
 invisible;bool
-renderstyle;string
-scalex;float
-scaley;float
 single;bool
 skill1;bool
 skill2;bool

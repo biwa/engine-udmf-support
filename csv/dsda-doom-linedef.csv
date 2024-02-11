@@ -1,6 +1,7 @@
 alpha;float
 anycross;bool
 arg0;int
+arg0str;string
 arg1;int
 arg2;int
 arg3;int
@@ -10,6 +11,7 @@ blockeverything;bool
 blockfloaters;bool
 blockhitscan;bool
 blocking;bool
+blocklandmonsters;bool
 blockmonsters;bool
 blockplayers;bool
 blockprojectiles;bool

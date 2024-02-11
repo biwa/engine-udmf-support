@@ -21,10 +21,10 @@ lightabsolute_bottom;bool
 lightabsolute_mid;bool
 lightabsolute_top;bool
 lightfog;bool
-lm_sampledist_line;int
-lm_sampledist_top;int
-lm_sampledist_mid;int
 lm_sampledist_bot;int
+lm_sampledist_line;int
+lm_sampledist_mid;int
+lm_sampledist_top;int
 lowercolor_bottom;int
 lowercolor_mid;int
 lowercolor_top;int
@@ -48,6 +48,9 @@ scaley_bottom;float
 scaley_mid;float
 scaley_top;float
 sector;int
+skew_bottom;int
+skew_middle;int
+skew_top;int
 smoothlighting;bool
 texturebottom;string
 texturemiddle;string
@@ -62,3 +65,11 @@ useowncolors_bottom;bool
 useowncolors_mid;bool
 useowncolors_top;bool
 wrapmidtex;bool
+xscroll;float
+xscrollbottom;float
+xscrollmid;float
+xscrolltop;float
+yscroll;float
+yscrollbottom;float
+yscrollmid;float
+yscrolltop;float

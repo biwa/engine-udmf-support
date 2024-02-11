@@ -17,8 +17,8 @@ damagetype;string
 floorid;int
 floorterrain;string
 friction;int
-heightceiling;int
-heightfloor;int
+heightceiling;float
+heightfloor;float
 id;int
 leakiness;int
 lightceiling;int

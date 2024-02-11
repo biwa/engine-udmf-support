@@ -8,7 +8,6 @@ lightabsolute;bool
 lightabsolute_bottom;bool
 lightabsolute_mid;bool
 lightabsolute_top;bool
-lightfog;bool
 nofakecontrast;bool
 offsetx;int
 offsetx_bottom;float
@@ -30,3 +29,11 @@ texturebottom;string
 texturemiddle;string
 texturetop;string
 wrapmidtex;bool
+xscroll;float
+xscrollbottom;float
+xscrollmid;float
+xscrolltop;float
+yscroll;float
+yscrollbottom;float
+yscrollmid;float
+yscrolltop;float
