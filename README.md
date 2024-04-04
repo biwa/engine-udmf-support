@@ -10,6 +10,7 @@ Base UDMF specifications (v1.1):
 - https://www.doomworld.com/eternity/engine/stuff/udmf11.txt
 
 Engine specific information:
+- DelphiDoom: https://github.com/jval1972/DelphiDoom/blob/master/udmf_delphidoom.txt
 - DSDA-Doom: https://github.com/kraflab/dsda-doom/blob/master/docs/udmf.md
 - Eternity Engine: https://eternity.youfailit.net/wiki/UDMF
 - GZDoom: https://github.com/ZDoom/gzdoom/blob/master/specs/udmf_zdoom.txt
