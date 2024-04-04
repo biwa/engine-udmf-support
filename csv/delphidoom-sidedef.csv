@@ -1,0 +1,14 @@
+comment;string
+nofakecontrast;bool
+offsetx;int
+offsetx_bottom;float
+offsetx_mid;float
+offsetx_top;float
+offsety;int
+offsety_bottom;float
+offsety_mid;float
+offsety_top;float
+sector;int
+texturebottom;string
+texturemiddle;string
+texturetop;string
