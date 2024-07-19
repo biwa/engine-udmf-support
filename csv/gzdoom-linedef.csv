@@ -3,6 +3,7 @@ anycross;bool
 arg0;int
 arg0str;string
 arg1;int
+arg1str;string
 arg2;int
 arg3;int
 arg4;int

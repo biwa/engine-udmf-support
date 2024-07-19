@@ -22,6 +22,7 @@ Engine specific information:
 |arg0              |int   | ✔️ |    ✔️    |   ✔️    |   ✔️   |  ✔️  |
 |arg0str           |string| -  |    -     |   ✔️    |   -    |  ✔️  |
 |arg1              |int   | ✔️ |    ✔️    |   ✔️    |   ✔️   |  ✔️  |
+|arg1str           |string| -  |    -     |    -    |   -    |  ✔️  |
 |arg2              |int   | ✔️ |    ✔️    |   ✔️    |   ✔️   |  ✔️  |
 |arg3              |int   | ✔️ |    ✔️    |   ✔️    |   ✔️   |  ✔️  |
 |arg4              |int   | ✔️ |    ✔️    |   ✔️    |   ✔️   |  ✔️  |
@@ -234,6 +235,8 @@ Engine specific information:
 |friction                 |*mixed*|   -    |    -     |    -    | ✔️ (int) |✔️ (float)|
 |frictionfactor           |float  |   -    |    -     |   ✔️    |    -     |    -     |
 |gravity                  |float  |   -    |    ✔️    |   ✔️    |    -     |    ✔️    |
+|health3d                 |int    |   -    |    -     |    -    |    -     |    ✔️    |
+|health3dgroup            |int    |   -    |    -     |    -    |    -     |    ✔️    |
 |healthceiling            |int    |   -    |    -     |    -    |    -     |    ✔️    |
 |healthceilinggroup       |int    |   -    |    -     |    -    |    -     |    ✔️    |
 |healthfloor              |int    |   -    |    -     |    -    |    -     |    ✔️    |
@@ -251,6 +254,7 @@ Engine specific information:
 |lightlevel               |int    |   ✔️   |    ✔️    |   ✔️    |    ✔️    |    ✔️    |
 |lightseqalt              |bool   |   -    |    -     |    -    |    ✔️    |    -     |
 |lightsequence            |bool   |   -    |    -     |    -    |    ✔️    |    -     |
+|lm_dynamic               |bool   |   -    |    -     |    -    |    -     |    ✔️    |
 |lm_sampledist_ceiling    |int    |   -    |    -     |    -    |    -     |    ✔️    |
 |lm_sampledist_floor      |int    |   -    |    -     |    -    |    -     |    ✔️    |
 |moreids                  |string |   -    |    ✔️    |   ✔️    |    -     |    ✔️    |
@@ -338,12 +342,14 @@ Engine specific information:
 ## Thing
 |      Field      | Type  |Base|DelphiDoom|DSDA-Doom | Eternity |  GZDoom  |
 |-----------------|-------|:--:|:--------:|:--------:|:--------:|:--------:|
+|SoftShadowRadius |float  | -  |    -     |    -     |    -     |    ✔️    |
 |alpha            |float  | -  |    -     |    ✔️    |    -     |    ✔️    |
 |ambush           |bool   | ✔️ |    ✔️    |    ✔️    |    ✔️    |    ✔️    |
 |angle            |int    | ✔️ |    ✔️    |    ✔️    |    ✔️    |    ✔️    |
 |arg0             |int    | ✔️ |    ✔️    |    ✔️    |    ✔️    |    ✔️    |
 |arg0str          |string | -  |    -     |    ✔️    |    -     |    ✔️    |
 |arg1             |int    | ✔️ |    ✔️    |    ✔️    |    ✔️    |    ✔️    |
+|arg1str          |string | -  |    -     |    -     |    -     |    ✔️    |
 |arg2             |int    | ✔️ |    ✔️    |    ✔️    |    ✔️    |    ✔️    |
 |arg3             |int    | ✔️ |    ✔️    |    ✔️    |    ✔️    |    ✔️    |
 |arg4             |int    | ✔️ |    ✔️    |    ✔️    |    ✔️    |    ✔️    |
@@ -372,13 +378,15 @@ Engine specific information:
 |fillcolor        |int    | -  |    -     |    -     |    -     |    ✔️    |
 |floatbobphase    |int    | -  |    -     |    -     |    -     |    ✔️    |
 |friend           |bool   | ✔️ |    ✔️    |    ✔️    |    ✔️    |    ✔️    |
+|friendlyseeblocks|int    | -  |    -     |    -     |    -     |    ✔️    |
 |gravity          |float  | -  |    ✔️    |    ✔️    |    -     |    ✔️    |
 |health           |*mixed*| -  | ✔️ (int) |✔️ (float)|✔️ (float)|✔️ (float)|
 |height           |float  | ✔️ |    ✔️    |    ✔️    |    ✔️    |    ✔️    |
 |id               |int    | ✔️ |    ✔️    |    ✔️    |    ✔️    |    ✔️    |
 |invisible        |bool   | ✔️ |    ✔️    |    ✔️    |    ✔️    |    ✔️    |
-|lm_sampledistance|int    | -  |    -     |    -     |    -     |    ✔️    |
+|lm_sampledist    |int    | -  |    -     |    -     |    -     |    ✔️    |
 |lm_suncolor      |string | -  |    -     |    -     |    -     |    ✔️    |
+|nocount          |bool   | -  |    -     |    -     |    -     |    ✔️    |
 |notriggerscripts |bool   | -  |    ✔️    |    -     |    -     |    -     |
 |onmiddlefloor    |bool   | -  |    ✔️    |    -     |    -     |    -     |
 |pitch            |int    | -  |    -     |    -     |    -     |    ✔️    |

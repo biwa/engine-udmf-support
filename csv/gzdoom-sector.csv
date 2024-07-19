@@ -40,6 +40,8 @@ floorterrain;string
 fogdensity;int
 friction;float
 gravity;float
+health3d;int
+health3dgroup;int
 healthceiling;int
 healthceilinggroup;int
 healthfloor;int
@@ -55,6 +57,7 @@ lightcolor;int
 lightfloor;int
 lightfloorabsolute;bool
 lightlevel;int
+lm_dynamic;bool
 lm_sampledist_ceiling;int
 lm_sampledist_floor;int
 moreids;string
