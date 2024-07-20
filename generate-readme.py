@@ -2,7 +2,7 @@ import csv
 from pytablewriter import MarkdownTableWriter
 from pytablewriter.style import Style
 
-engines = [ 'Base', 'DelphiDoom', 'DSDA-Doom', 'Eternity', 'GZDoom' ]
+engines = [ 'Base', 'DelphiDoom', 'DSDA-Doom', 'EDGE-Classic', 'Eternity', 'GZDoom' ]
 map_elements = [ 'linedef', 'sidedef', 'sector', 'vertex', 'thing' ]
 data_types = [ 'int', 'float', 'bool', 'string', '-' ]
 file_name_template = 'csv/{0}-{1}.csv'

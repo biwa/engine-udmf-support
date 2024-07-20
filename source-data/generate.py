@@ -303,13 +303,6 @@ def generate_delphidoom():
 
         i += 1
 
-    # The specs do not list all skill and class variants, so fix that
-    #for i in range(6, 17):
-    #    data['thing'][f'skill{i}'] = 'bool'
-#
-    #for i in range(4, 17):
-    #    data['thing'][f'class{i}'] = 'bool'
-
     print('DelphiDoom: writing CSV files...')
 
     for map_element in data:
@@ -319,8 +312,74 @@ def generate_delphidoom():
             for key in sorted(data[map_element].keys()):
                 outfile.write(f'{key};{data[map_element][key]}\n')                
 
+def generate_edge_classic():
+    filename = 'edge-classic-udmf.txt'
+    url = 'https://raw.githubusercontent.com/edge-classic/EDGE-classic/master/docs/specifications/UDMF%20EDGE-Classic%20Extensions.txt'
+
+    if not is_source_current(filename):
+        print(f'EDGE-Classic: getting {url}')
+
+        try:
+            text_data = get_remote_data(url)
+        except Exception as e:
+            print(e)
+            return
+        
+        with open(filename, 'w') as file:
+            file.write(text_data)
+    else:
+        print(f'EDGE-Classic: {filename} is up-to-date')
+
+    data = {
+        'linedef': { },
+        'sector': { },
+        'sidedef': { },
+        'thing': { },
+        'vertex': { }
+    }
+
+    fill_base_data(data)
+
+    with open(filename) as file:
+        lines = list(filter(None, [ line.split('//', 1)[0].strip() for line in file ]))
+
+    i = 0
+    current_map_element = None
+
+    while i < len(lines):
+        if lines[i] in data.keys() and lines[i+1] == '{':
+            current_map_element = lines[i]
+            i += 1
+
+        if lines[i] == '}':
+            current_map_element = None
+
+        if current_map_element is not None:
+            mo = re.search(r'(\w+)\s+=\s+<(\w+)>', lines[i])
+            
+            if mo is not None:
+                prop_name = mo.group(1)
+                prop_type = mo.group(2)
+
+                if prop_type == 'integer':
+                    prop_type = 'int'
+                
+                data[current_map_element][prop_name] = prop_type            
+
+        i += 1
+
+    print('EDGE-Classic: writing CSV files...')
+
+    for map_element in data:
+        csv_filename = f'../csv/edge-classic-{map_element}.csv'
+        print(f'EDGE-Classic: writing {csv_filename}')
+        with open(csv_filename, 'w', newline='\n') as outfile:
+            for key in sorted(data[map_element].keys()):
+                outfile.write(f'{key};{data[map_element][key]}\n')
+
 if __name__ == '__main__':
     generate_delphidoom()
     generate_dsda_doom()
+    generate_edge_classic()
     generate_eternity()
     generate_gzdoom()
