@@ -34,8 +34,8 @@ healthgroup;int
 id;int
 impact;bool
 jumpover;bool
+lm_sampledist;int
 lm_sampledist_bot;int
-lm_sampledist_line;int
 lm_sampledist_mid;int
 lm_sampledist_top;int
 locknumber;int
@@ -66,5 +66,6 @@ transparent;bool
 twosided;bool
 v1;int
 v2;int
+walking;bool
 wrapmidtex;bool
 zoneboundary;bool

@@ -1,4 +1,3 @@
-SoftShadowRadius;float
 alpha;float
 ambush;bool
 angle;int
@@ -40,8 +39,16 @@ health;float
 height;float
 id;int
 invisible;bool
+light_dontlightactors;bool
+light_dontlightmap;bool
+light_noshadowmap;bool
+light_softshadowradius;float
+light_strength;float
+lm_ao;bool
+lm_bounce;bool
 lm_sampledist;int
-lm_suncolor;string
+lm_suncolor;int
+lm_sunintensity;float
 nocount;bool
 pitch;int
 renderstyle;string

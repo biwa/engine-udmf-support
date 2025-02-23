@@ -9,6 +9,7 @@ heightfloor;int
 id;int
 lightcolor;int
 lightlevel;int
+reverbpreset;string
 rotationceiling;float
 rotationfloor;float
 special;int

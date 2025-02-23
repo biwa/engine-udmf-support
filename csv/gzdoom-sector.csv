@@ -40,6 +40,7 @@ floorterrain;string
 fogdensity;int
 friction;float
 gravity;float
+harminair;bool
 health3d;int
 health3dgroup;int
 healthceiling;int
@@ -49,6 +50,7 @@ healthfloorgroup;int
 heightceiling;int
 heightfloor;int
 hidden;bool
+hurtmonsters;bool
 id;int
 leakiness;int
 lightceiling;int

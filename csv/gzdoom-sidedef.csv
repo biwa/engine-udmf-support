@@ -21,8 +21,8 @@ lightabsolute_bottom;bool
 lightabsolute_mid;bool
 lightabsolute_top;bool
 lightfog;bool
+lm_sampledist;int
 lm_sampledist_bot;int
-lm_sampledist_line;int
 lm_sampledist_mid;int
 lm_sampledist_top;int
 lowercolor_bottom;int

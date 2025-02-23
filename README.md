@@ -55,8 +55,8 @@ Engine specific information:
 |id                |int   | ✔️ |    ✔️    |   ✔️    |     ✔️     |   ✔️   |  ✔️  |
 |impact            |bool  | ✔️ |    ✔️    |   ✔️    |     ✔️     |   ✔️   |  ✔️  |
 |jumpover          |bool  | ✔️ |    ✔️    |   ✔️    |     ✔️     |   ✔️   |  ✔️  |
+|lm_sampledist     |int   | -  |    -     |    -    |     -      |   -    |  ✔️  |
 |lm_sampledist_bot |int   | -  |    -     |    -    |     -      |   -    |  ✔️  |
-|lm_sampledist_line|int   | -  |    -     |    -    |     -      |   -    |  ✔️  |
 |lm_sampledist_mid |int   | -  |    -     |    -    |     -      |   -    |  ✔️  |
 |lm_sampledist_top |int   | -  |    -     |    -    |     -      |   -    |  ✔️  |
 |locknumber        |int   | -  |    -     |   ✔️    |     -      |   -    |  ✔️  |
@@ -96,6 +96,7 @@ Engine specific information:
 |upperportal       |bool  | -  |    -     |    -    |     -      |   ✔️   |  -   |
 |v1                |int   | ✔️ |    ✔️    |   ✔️    |     ✔️     |   ✔️   |  ✔️  |
 |v2                |int   | ✔️ |    ✔️    |   ✔️    |     ✔️     |   ✔️   |  ✔️  |
+|walking           |bool  | -  |    -     |    -    |     -      |   -    |  ✔️  |
 |wrapmidtex        |bool  | -  |    -     |   ✔️    |     -      |   -    |  ✔️  |
 |zoneboundary      |bool  | -  |    -     |    -    |     -      |   ✔️   |  ✔️  |
 
@@ -125,8 +126,8 @@ Engine specific information:
 |lightabsolute_mid    |bool   |   -    |    -     |   ✔️    |     -      |    ✔️    |   ✔️   |
 |lightabsolute_top    |bool   |   -    |    -     |   ✔️    |     -      |    ✔️    |   ✔️   |
 |lightfog             |bool   |   -    |    -     |    -    |     -      |    -     |   ✔️   |
+|lm_sampledist        |int    |   -    |    -     |    -    |     -      |    -     |   ✔️   |
 |lm_sampledist_bot    |int    |   -    |    -     |    -    |     -      |    -     |   ✔️   |
-|lm_sampledist_line   |int    |   -    |    -     |    -    |     -      |    -     |   ✔️   |
 |lm_sampledist_mid    |int    |   -    |    -     |    -    |     -      |    -     |   ✔️   |
 |lm_sampledist_top    |int    |   -    |    -     |    -    |     -      |    -     |   ✔️   |
 |lowercolor_bottom    |int    |   -    |    -     |    -    |     -      |    -     |   ✔️   |
@@ -237,6 +238,7 @@ Engine specific information:
 |friction                 |*mixed*|   -    |    -     |    -    |     -      | ✔️ (int) |✔️ (float)|
 |frictionfactor           |float  |   -    |    -     |   ✔️    |     -      |    -     |    -     |
 |gravity                  |float  |   -    |    ✔️    |   ✔️    |     ✔️     |    -     |    ✔️    |
+|harminair                |bool   |   -    |    -     |    -    |     -      |    -     |    ✔️    |
 |health3d                 |int    |   -    |    -     |    -    |     -      |    -     |    ✔️    |
 |health3dgroup            |int    |   -    |    -     |    -    |     -      |    -     |    ✔️    |
 |healthceiling            |int    |   -    |    -     |    -    |     -      |    -     |    ✔️    |
@@ -246,6 +248,7 @@ Engine specific information:
 |heightceiling            |*mixed*|✔️ (int)| ✔️ (int) |✔️ (int) |  ✔️ (int)  |✔️ (float)| ✔️ (int) |
 |heightfloor              |*mixed*|✔️ (int)| ✔️ (int) |✔️ (int) |  ✔️ (int)  |✔️ (float)| ✔️ (int) |
 |hidden                   |bool   |   -    |    ✔️    |   ✔️    |     -      |    -     |    ✔️    |
+|hurtmonsters             |bool   |   -    |    -     |    -    |     -      |    -     |    ✔️    |
 |id                       |int    |   ✔️   |    ✔️    |   ✔️    |     ✔️     |    ✔️    |    ✔️    |
 |leakiness                |int    |   -    |    -     |   ✔️    |     -      |    ✔️    |    ✔️    |
 |lightceiling             |int    |   -    |    -     |   ✔️    |     -      |    ✔️    |    ✔️    |
@@ -286,6 +289,7 @@ Engine specific information:
 |portalfloor              |int    |   -    |    -     |    -    |     -      |    ✔️    |    -     |
 |renderstyleceiling       |string |   -    |    -     |    -    |     -      |    -     |    ✔️    |
 |renderstylefloor         |string |   -    |    -     |    -    |     -      |    -     |    ✔️    |
+|reverbpreset             |string |   -    |    -     |    -    |     ✔️     |    -     |    -     |
 |rippleceiling            |bool   |   -    |    ✔️    |    -    |     -      |    -     |    -     |
 |ripplefloor              |bool   |   -    |    ✔️    |    -    |     -      |    -     |    -     |
 |rotationceiling          |float  |   -    |    ✔️    |   ✔️    |     ✔️     |    ✔️    |    ✔️    |
@@ -342,84 +346,91 @@ Engine specific information:
 |zfloor  |float| -  |    ✔️    |    -    |     ✔️     |   -    |  ✔️  |
 
 ## Thing
-|      Field      | Type  |Base|DelphiDoom|DSDA-Doom |EDGE-Classic| Eternity |  GZDoom  |
-|-----------------|-------|:--:|:--------:|:--------:|:----------:|:--------:|:--------:|
-|SoftShadowRadius |float  | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|alpha            |float  | -  |    -     |    ✔️    |     ✔️     |    -     |    ✔️    |
-|ambush           |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|angle            |int    | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|arg0             |int    | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|arg0str          |string | -  |    -     |    ✔️    |     -      |    -     |    ✔️    |
-|arg1             |int    | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|arg1str          |string | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|arg2             |int    | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|arg3             |int    | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|arg4             |int    | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|class1           |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|class10          |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|class11          |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|class12          |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|class13          |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|class14          |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|class15          |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|class16          |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|class2           |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|class3           |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|class4           |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|class5           |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|class6           |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|class7           |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|class8           |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|class9           |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|comment          |string | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|conversation     |int    | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|coop             |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|countsecret      |bool   | -  |    -     |    ✔️    |     -      |    -     |    ✔️    |
-|dm               |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|dormant          |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|fillcolor        |int    | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|floatbobphase    |int    | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|friend           |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|friendlyseeblocks|int    | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|gravity          |float  | -  |    ✔️    |    ✔️    |     -      |    -     |    ✔️    |
-|health           |*mixed*| -  | ✔️ (int) |✔️ (float)| ✔️ (float) |✔️ (float)|✔️ (float)|
-|height           |float  | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|id               |int    | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|invisible        |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|lm_sampledist    |int    | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|lm_suncolor      |string | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|nocount          |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|notriggerscripts |bool   | -  |    ✔️    |    -     |     -      |    -     |    -     |
-|onmiddlefloor    |bool   | -  |    ✔️    |    -     |     -      |    -     |    -     |
-|pitch            |int    | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|renderstyle      |string | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|roll             |int    | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|scale            |float  | -  |    -     |    -     |     ✔️     |    -     |    ✔️    |
-|scalex           |float  | -  |    -     |    -     |     ✔️     |    -     |    ✔️    |
-|scaley           |float  | -  |    -     |    -     |     ✔️     |    -     |    ✔️    |
-|score            |int    | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|single           |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|skill1           |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|skill10          |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|skill11          |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|skill12          |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|skill13          |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|skill14          |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|skill15          |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|skill16          |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|skill2           |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|skill3           |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|skill4           |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|skill5           |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|skill6           |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|skill7           |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|skill8           |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|skill9           |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
-|special          |int    | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|standing         |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|strifeally       |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|translucent      |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|type             |int    | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|x                |float  | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
-|y                |float  | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|        Field         | Type  |Base|DelphiDoom|DSDA-Doom |EDGE-Classic| Eternity |  GZDoom  |
+|----------------------|-------|:--:|:--------:|:--------:|:----------:|:--------:|:--------:|
+|alpha                 |float  | -  |    -     |    ✔️    |     ✔️     |    -     |    ✔️    |
+|ambush                |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|angle                 |int    | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|arg0                  |int    | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|arg0str               |string | -  |    -     |    ✔️    |     -      |    -     |    ✔️    |
+|arg1                  |int    | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|arg1str               |string | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|arg2                  |int    | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|arg3                  |int    | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|arg4                  |int    | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|class1                |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|class10               |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|class11               |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|class12               |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|class13               |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|class14               |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|class15               |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|class16               |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|class2                |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|class3                |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|class4                |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|class5                |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|class6                |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|class7                |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|class8                |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|class9                |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|comment               |string | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|conversation          |int    | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|coop                  |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|countsecret           |bool   | -  |    -     |    ✔️    |     -      |    -     |    ✔️    |
+|dm                    |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|dormant               |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|fillcolor             |int    | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|floatbobphase         |int    | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|friend                |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|friendlyseeblocks     |int    | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|gravity               |float  | -  |    ✔️    |    ✔️    |     -      |    -     |    ✔️    |
+|health                |*mixed*| -  | ✔️ (int) |✔️ (float)| ✔️ (float) |✔️ (float)|✔️ (float)|
+|height                |float  | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|id                    |int    | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|invisible             |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|light_dontlightactors |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|light_dontlightmap    |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|light_noshadowmap     |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|light_softshadowradius|float  | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|light_strength        |float  | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|lm_ao                 |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|lm_bounce             |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|lm_sampledist         |int    | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|lm_suncolor           |int    | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|lm_sunintensity       |float  | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|nocount               |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|notriggerscripts      |bool   | -  |    ✔️    |    -     |     -      |    -     |    -     |
+|onmiddlefloor         |bool   | -  |    ✔️    |    -     |     -      |    -     |    -     |
+|pitch                 |int    | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|renderstyle           |string | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|roll                  |int    | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|scale                 |float  | -  |    -     |    -     |     ✔️     |    -     |    ✔️    |
+|scalex                |float  | -  |    -     |    -     |     ✔️     |    -     |    ✔️    |
+|scaley                |float  | -  |    -     |    -     |     ✔️     |    -     |    ✔️    |
+|score                 |int    | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|single                |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|skill1                |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|skill10               |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|skill11               |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|skill12               |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|skill13               |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|skill14               |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|skill15               |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|skill16               |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|skill2                |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|skill3                |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|skill4                |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|skill5                |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|skill6                |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|skill7                |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|skill8                |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|skill9                |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|special               |int    | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|standing              |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|strifeally            |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|translucent           |bool   | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|type                  |int    | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|x                     |float  | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
+|y                     |float  | ✔️ |    ✔️    |    ✔️    |     ✔️     |    ✔️    |    ✔️    |
 
