@@ -396,6 +396,7 @@ Engine specific information:
 |light_strength        |float  | -  |    -     |    -     |     -      |    -     |    ✔️    |
 |lm_ao                 |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
 |lm_bounce             |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
+|lm_dynamic            |bool   | -  |    -     |    -     |     -      |    -     |    ✔️    |
 |lm_sampledist         |int    | -  |    -     |    -     |     -      |    -     |    ✔️    |
 |lm_suncolor           |int    | -  |    -     |    -     |     -      |    -     |    ✔️    |
 |lm_sunintensity       |float  | -  |    -     |    -     |     -      |    -     |    ✔️    |

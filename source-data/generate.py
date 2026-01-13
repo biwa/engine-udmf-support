@@ -314,7 +314,7 @@ def generate_delphidoom():
 
 def generate_edge_classic():
     filename = 'edge-classic-udmf.txt'
-    url = 'https://raw.githubusercontent.com/edge-classic/EDGE-classic/master/docs/specifications/UDMF%20EDGE-Classic%20Extensions.txt'
+    url = 'https://raw.githubusercontent.com/edge-classic/EDGE-classic/master/docs/specifications/EDGE-Classic%20UDMF%20Extensions.txt'
 
     if not is_source_current(filename):
         print(f'EDGE-Classic: getting {url}')
